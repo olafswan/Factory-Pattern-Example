@@ -1,20 +1,21 @@
-# Utilisez des design patterns en JavaScript
+# Implémenter un Factory Pattern
 
-Bienvenue sur le code source du projet fil rouge **Filmo Patterns**. Ce projet a été réalisé en lien avec le cours **Utilisez des design patterns en JavaScript** sur OpenClassrooms.
+- Le Factory Pattern est utilisé pour déléguer la création d’objets. Au lieu de créer vos objets “en direct”, vous passez par un autre objet (la Factory) qui va se charger de créer le bon objet.
 
-## Prérequis
+- Pour créer un Factory Pattern, vous devez créer un dossierfactories et instancier les objets directement depuis le bon constructeur de la Factory.
 
-Aucun ! Le projet a été codé en Vanilla JavaScript, vous n'avez pas besoin de NodeJS ou d'autres outils pour ce projet.
+- Attention à l’utilisation de ce dernier, qui a tendance à fortement complexifier la base de code.
 
-Pour récupérer ce projet, vous pouvez simplement réaliser un `git clone` comme ci-contre `git@github.com:tdimnet/DRAFT-utilisez-des-design-patterns-en-javascript.git` (j'utilise ici ma clé SSH pour cloner le repo).
+## Exemple du projet Filmo Patterns
 
-Je vous invite ici à utiliser [VsCode](https://code.visualstudio.com/) (ou Vim ;)) avec l'extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+![Représentation du factory Pattern utilisé en exemple](https://user.oc-static.com/upload/2021/10/14/16342066059486_p2c2-1.png)
 
-## Informations complémentaires
+Dans le diagramme ci-dessus, vous pouvez voir que le Factory Pattern est composé des éléments suivants :
 
-À partir de la partie 2, chaque chapitre comporte entre deux et trois branches :
-- `partie-2/chapitre-2-debut` - correspond à la branche du début de chaque chapitre
-- `partie-2/chapitre-2-exercice` - (**optionnel**) correspond à la branche d'activité
-- `partie-2/chapitre-2-fin` - correspond à la branche de fin de chapitre.
+(**La Factory.**) Elle va récupérer les données qui lui seront passées, et va déléguer la création et le formatage de ces données au bon Constructor. Ici, les données sont celles des fichiers `new-movie-data.json` et `external-movie-data.json`.
 
-En plus des branches des chapitres, vous trouverez aussi des branches pour les quiz sous la forme `partie-1/quiz/question-4`.
+(**Les objets**) qui vont être créés par la Factory. Dans notre cas, nous allons avoir deux Constructor Patterns. Un qui existe déjà (Movie.js) et l’autre qui reste à créer. Ils vont formater la donnée pour nous. Ils vont l’envoyer dans notre fichier de template `MovieCard` sans que ce dernier ait de traitements supplémentaires à réaliser.
+
+## Utilisez des design patterns en JavaScript
+
+Cours [Utilisez des design patterns en JavaScript](https://openclassrooms.com/fr/courses/7133336-utilisez-des-design-patterns-en-javascript), chapitre [Déléguez la création des objets avec le Factory Pattern](https://openclassrooms.com/fr/courses/7133336-utilisez-des-design-patterns-en-javascript/7478442-deleguez-la-creation-des-objets-avec-le-factory-pattern) sur OpenClassrooms.
