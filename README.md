@@ -19,3 +19,6 @@ Dans le diagramme ci-dessus, vous pouvez voir que le Factory Pattern est compos�
 ## Utilisez des design patterns en JavaScript
 
 Cours [Utilisez des design patterns en JavaScript](https://openclassrooms.com/fr/courses/7133336-utilisez-des-design-patterns-en-javascript), par @tdimnet, chapitre [Déléguez la création des objets avec le Factory Pattern](https://openclassrooms.com/fr/courses/7133336-utilisez-des-design-patterns-en-javascript/7478442-deleguez-la-creation-des-objets-avec-le-factory-pattern) sur OpenClassrooms.
+
+### Lien GitHub Pages :
+[Projet Filmo Patterns](https://olafswan.github.io/Factory-Pattern-Example/index.html)
